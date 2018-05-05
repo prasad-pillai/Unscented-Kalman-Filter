@@ -29,7 +29,7 @@ public:
   MatrixXd P_;
 
   ///* predicted sigma points matrix
-  MatrixXd Xsig_pred_;
+  MatrixXd X_sig_pred_;
 
   ///* time when the state is true, in us
   long long time_us_;
@@ -66,6 +66,13 @@ public:
 
   ///* Sigma point spreading parameter
   double lambda_;
+
+  // Number of sigma points
+  int n_sig_;
+
+  //NIS
+  float nis_laser_;
+  float nis_radar_;
 
 
   /**

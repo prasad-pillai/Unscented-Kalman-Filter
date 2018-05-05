@@ -29,7 +29,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
 		}
 
 		//accumulate squared difference
-		for(uint8_t i=0; i < estimations.size(); ++i){
+		for(unsigned int i=0; i < estimations.size(); ++i){
 			VectorXd difference = estimations[i] - ground_truth[i];
 
 			//coefficient-wise multiplication
